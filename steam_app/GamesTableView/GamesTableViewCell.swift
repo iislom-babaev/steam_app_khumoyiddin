@@ -16,21 +16,37 @@ class GamesTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
     @IBAction func favoriteToggle(_ sender: UIButton) {
         if sender.imageView?.image == UIImage(systemName: "star") {
-            favoriteStar.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            titleLabel.font = .boldSystemFont(ofSize: 15)
+            setStarImage(string: "star.fill")
+            setLabelTextFont(font: .boldSystemFont(ofSize: 15))
         } else {
-            favoriteStar.setImage(UIImage(systemName: "star"), for: .normal)
-            titleLabel.font = .systemFont(ofSize: 15)
-            
+            setStarImage(string: "star")
+            setLabelTextFont(font: .systemFont(ofSize: 15))
         }
     }
+    
+    func setLabelText(text: String) {
+        titleLabel.text = text
+    }
+    
+    func setLabelTextFont(font: UIFont) {
+        titleLabel.font = font
+    }
+    func setStarImage(string: String) {
+        favoriteStar.setImage(UIImage(systemName: string), for: .normal)
+    }
+    
+    
+}
+
+extension GamesTableViewCell {
+    static let nibName: String = "GamesTableViewCell"
 }
