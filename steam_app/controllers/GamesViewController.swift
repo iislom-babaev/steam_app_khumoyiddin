@@ -7,17 +7,12 @@
 
 import UIKit
 
-
-let gamesList = LocalCache.gamesList
-
 class GamesViewController: UIViewController {
-    
+    let gamesList = LocalCache.gamesList
     @IBOutlet weak var tableView: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureTableView()
     }
     
@@ -57,6 +52,9 @@ extension GamesViewController: UITableViewDataSource {
         if game.isFavorite {
             cell.setLabelTextFont(font: .boldSystemFont(ofSize: 15))
             cell.setStarImage(string: "star.fill")
+        } else {
+            cell.setLabelTextFont(font: .systemFont(ofSize: 15))
+            cell.setStarImage(string: "star")
         }
     }
 }
