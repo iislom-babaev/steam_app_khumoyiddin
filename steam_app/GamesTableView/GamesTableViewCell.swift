@@ -8,10 +8,9 @@
 import UIKit
 
 class GamesTableViewCell: UITableViewCell {
-    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var favoriteStar: UIButton!
-    
+    let gamesList = LocalCache.gamesList
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,8 +18,6 @@ class GamesTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
     @IBAction func favoriteToggle(_ sender: UIButton) {
@@ -30,6 +27,19 @@ class GamesTableViewCell: UITableViewCell {
         } else {
             setStarImage(string: "star")
             setLabelTextFont(font: .systemFont(ofSize: 15))
+        }
+    }
+    
+    func cellConfiguration(cell: GamesTableViewCell, indexPath: IndexPath) {
+        let game = gamesList[indexPath.row]
+        
+        cell.setLabelText(text: game.title)
+        if game.isFavorite {
+            cell.setLabelTextFont(font: .boldSystemFont(ofSize: 15))
+            cell.setStarImage(string: "star.fill")
+        } else {
+            cell.setLabelTextFont(font: .systemFont(ofSize: 15))
+            cell.setStarImage(string: "star")
         }
     }
     
