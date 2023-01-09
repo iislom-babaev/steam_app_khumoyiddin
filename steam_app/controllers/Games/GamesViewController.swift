@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class GamesViewController: UIViewController {
     let gamesList = LocalCache.gamesList
     @IBOutlet weak var tableView: UITableView!
@@ -27,7 +28,9 @@ class GamesViewController: UIViewController {
 
 extension GamesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapping on cell")
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showDetail", sender: self)
+//        navigationController?.pushViewController(GamesDetailsViewController(), animated: false)
     }
 }
 
