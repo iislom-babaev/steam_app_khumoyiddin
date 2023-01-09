@@ -17,6 +17,10 @@ class FavoritesViewController: UIViewController {
         configureTableView()
     }
     
+    @IBAction func sortFavorites(_ sender: Any) {
+    }
+    @IBAction func editFavorite(_ sender: Any) {
+    }
     func configureTableView() {
         let nib = UINib(nibName: FavoritesTableViewCell.nibName, bundle: nil)
         

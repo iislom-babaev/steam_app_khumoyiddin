@@ -172,9 +172,15 @@
                         <barButtonItem key="backBarButtonItem" title="Sort" id="VP7-bX-aUz"/>
                         <barButtonItem key="leftBarButtonItem" title="Sort" id="Xau-6U-ica">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="sortFavorites:" destination="sab-jo-5mf" id="Axl-ko-c9X"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="PCG-YJ-MST">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="editFavorite:" destination="sab-jo-5mf" id="R2M-A7-iEq"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
