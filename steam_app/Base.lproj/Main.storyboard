@@ -45,6 +45,18 @@
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="TopNavigationBarColor"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="TopNavigationBarColor"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <connections>
                         <segue destination="8Kx-wX-xTR" kind="relationship" relationship="rootViewController" id="HJY-pb-maZ"/>
@@ -179,13 +191,13 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 Jul, 2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uZ-z1-5fI">
-                                                        <rect key="frame" x="8" y="123" width="80" height="19.333333333333343"/>
+                                                        <rect key="frame" x="8" y="123" width="80" height="19"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free to Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuT-AB-GvS">
-                                                        <rect key="frame" x="133" y="121" width="109.66666666666666" height="23"/>
+                                                        <rect key="frame" x="132.33333333333334" y="121" width="109.66666666666666" height="23"/>
                                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                                         <color key="textColor" name="GreenColor"/>
                                                         <nil key="highlightedColor"/>
@@ -283,8 +295,11 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" name="MainScreenBackgroundColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" name="MainScreenBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="u4e-dJ-pXv" secondAttribute="trailing" id="0Jg-TQ-A1t"/>
                                     <constraint firstItem="u4e-dJ-pXv" firstAttribute="width" secondItem="aWI-mb-a9k" secondAttribute="width" id="Z63-qB-TI0"/>
@@ -296,7 +311,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MfS-wI-cGv"/>
-                        <color key="backgroundColor" name="TopNavigationBarColor"/>
+                        <color key="backgroundColor" name="MainScreenBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aWI-mb-a9k" firstAttribute="leading" secondItem="MfS-wI-cGv" secondAttribute="leading" id="6AS-Ar-tg7"/>
                             <constraint firstItem="MfS-wI-cGv" firstAttribute="trailing" secondItem="aWI-mb-a9k" secondAttribute="trailing" id="IQy-m9-TTt"/>

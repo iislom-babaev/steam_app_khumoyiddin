@@ -20,8 +20,6 @@
 		409DC48A295C4BC700B9CD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DC488295C4BC700B9CD31 /* Main.storyboard */; };
 		409DC48C295C4BC800B9CD31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409DC48B295C4BC800B9CD31 /* Assets.xcassets */; };
 		409DC48F295C4BC800B9CD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DC48D295C4BC800B9CD31 /* LaunchScreen.storyboard */; };
-		40C964B6296BC041002E0A88 /* dota2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 40C964B4296BC040002E0A88 /* dota2.jpeg */; };
-		40C964B7296BC041002E0A88 /* dota2_play.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40C964B5296BC040002E0A88 /* dota2_play.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +38,6 @@
 		409DC48B295C4BC800B9CD31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409DC48E295C4BC800B9CD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		409DC490295C4BC800B9CD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40C964B4296BC040002E0A88 /* dota2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dota2.jpeg; sourceTree = "<group>"; };
-		40C964B5296BC040002E0A88 /* dota2_play.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dota2_play.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +114,6 @@
 				406C3D64295DB1C4002275B1 /* controllers */,
 				409DC488295C4BC700B9CD31 /* Main.storyboard */,
 				409DC48B295C4BC800B9CD31 /* Assets.xcassets */,
-				40C964B5296BC040002E0A88 /* dota2_play.jpg */,
-				40C964B4296BC040002E0A88 /* dota2.jpeg */,
 				409DC48D295C4BC800B9CD31 /* LaunchScreen.storyboard */,
 				409DC490295C4BC800B9CD31 /* Info.plist */,
 			);
@@ -188,8 +182,6 @@
 				409DC48C295C4BC800B9CD31 /* Assets.xcassets in Resources */,
 				409DC48A295C4BC700B9CD31 /* Main.storyboard in Resources */,
 				407FE676296436E900E2E784 /* GamesTableViewCell.xib in Resources */,
-				40C964B7296BC041002E0A88 /* dota2_play.jpg in Resources */,
-				40C964B6296BC041002E0A88 /* dota2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
