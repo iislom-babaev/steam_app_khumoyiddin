@@ -27,7 +27,6 @@ class GamesViewController: UIViewController {
 
 extension GamesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapping on cell")
     }
 }
 

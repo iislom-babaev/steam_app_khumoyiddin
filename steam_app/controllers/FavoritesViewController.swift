@@ -9,7 +9,6 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
     let favsList = LocalCache.favsList
-    
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -39,7 +38,6 @@ extension FavoritesViewController: UITableViewDelegate {
 
 
 extension FavoritesViewController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favsList.count
     }
@@ -47,11 +45,8 @@ extension FavoritesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoritesTableViewCell.nibName, for: indexPath) as! FavoritesTableViewCell
         cell.cellConfiguration(cell: cell, indexPath: indexPath)
-        
         return cell
     }
-    
-    
 }
 
 

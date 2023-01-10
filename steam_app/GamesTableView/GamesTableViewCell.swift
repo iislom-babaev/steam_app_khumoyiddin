@@ -33,6 +33,7 @@ class GamesTableViewCell: UITableViewCell {
     func cellConfiguration(cell: GamesTableViewCell, indexPath: IndexPath) {
         let game = gamesList[indexPath.row]
         
+        cell.selectionStyle = .none
         cell.setLabelText(text: game.title)
         if game.isFavorite {
             cell.setLabelTextFont(font: .boldSystemFont(ofSize: 15))
