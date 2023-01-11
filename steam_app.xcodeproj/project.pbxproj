@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		406832B5296D2D6500903655 /* csgo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 406832B4296D2D6500903655 /* csgo.jpeg */; };
 		407168CE296ABE6600813D8B /* GamesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407168CD296ABE6600813D8B /* GamesDetailsViewController.swift */; };
 		407FE66429642DC600E2E784 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE66329642DC600E2E784 /* FavoritesViewController.swift */; };
 		407FE66629642DD800E2E784 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE66529642DD800E2E784 /* NewsViewController.swift */; };
@@ -25,12 +24,9 @@
 		40A17D7A296C050F00A82AB1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A17D78296C050F00A82AB1 /* NewsTableViewCell.xib */; };
 		40A17D7C296C06FF00A82AB1 /* NewsGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A17D7B296C06FF00A82AB1 /* NewsGameViewModel.swift */; };
 		40A17D7F296C0CA000A82AB1 /* NewsDeatilsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A17D7E296C0CA000A82AB1 /* NewsDeatilsViewController.swift */; };
-		40C964B6296BC041002E0A88 /* dota2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 40C964B4296BC040002E0A88 /* dota2.jpeg */; };
-		40C964B7296BC041002E0A88 /* dota2_play.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40C964B5296BC040002E0A88 /* dota2_play.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		406832B4296D2D6500903655 /* csgo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = csgo.jpeg; sourceTree = "<group>"; };
 		407168CD296ABE6600813D8B /* GamesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesDetailsViewController.swift; sourceTree = "<group>"; };
 		407FE66329642DC600E2E784 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		407FE66529642DD800E2E784 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +46,6 @@
 		40A17D78296C050F00A82AB1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		40A17D7B296C06FF00A82AB1 /* NewsGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsGameViewModel.swift; sourceTree = "<group>"; };
 		40A17D7E296C0CA000A82AB1 /* NewsDeatilsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDeatilsViewController.swift; sourceTree = "<group>"; };
-		40C964B4296BC040002E0A88 /* dota2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dota2.jpeg; sourceTree = "<group>"; };
-		40C964B5296BC040002E0A88 /* dota2_play.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dota2_play.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +124,6 @@
 				406C3D64295DB1C4002275B1 /* controllers */,
 				409DC488295C4BC700B9CD31 /* Main.storyboard */,
 				409DC48B295C4BC800B9CD31 /* Assets.xcassets */,
-				406832B4296D2D6500903655 /* csgo.jpeg */,
-				40C964B5296BC040002E0A88 /* dota2_play.jpg */,
-				40C964B4296BC040002E0A88 /* dota2.jpeg */,
 				409DC48D295C4BC800B9CD31 /* LaunchScreen.storyboard */,
 				409DC490295C4BC800B9CD31 /* Info.plist */,
 			);
@@ -216,13 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				409DC48F295C4BC800B9CD31 /* LaunchScreen.storyboard in Resources */,
-				406832B5296D2D6500903655 /* csgo.jpeg in Resources */,
 				409DC48C295C4BC800B9CD31 /* Assets.xcassets in Resources */,
 				409DC48A295C4BC700B9CD31 /* Main.storyboard in Resources */,
 				40A17D7A296C050F00A82AB1 /* NewsTableViewCell.xib in Resources */,
 				407FE676296436E900E2E784 /* GamesTableViewCell.xib in Resources */,
-				40C964B7296BC041002E0A88 /* dota2_play.jpg in Resources */,
-				40C964B6296BC041002E0A88 /* dota2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
