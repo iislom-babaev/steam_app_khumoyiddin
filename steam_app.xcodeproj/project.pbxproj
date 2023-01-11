@@ -20,6 +20,9 @@
 		409DC48A295C4BC700B9CD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DC488295C4BC700B9CD31 /* Main.storyboard */; };
 		409DC48C295C4BC800B9CD31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409DC48B295C4BC800B9CD31 /* Assets.xcassets */; };
 		409DC48F295C4BC800B9CD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DC48D295C4BC800B9CD31 /* LaunchScreen.storyboard */; };
+		40C964BB296BD9F7002E0A88 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C964B9296BD9F6002E0A88 /* FavoritesTableViewCell.swift */; };
+		40C964BC296BD9F7002E0A88 /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C964BA296BD9F7002E0A88 /* FavoritesTableViewCell.xib */; };
+		40C964BE296BDC54002E0A88 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C964BD296BDC54002E0A88 /* FavoriteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		409DC48B295C4BC800B9CD31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409DC48E295C4BC800B9CD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		409DC490295C4BC800B9CD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C964B9296BD9F6002E0A88 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		40C964BA296BD9F7002E0A88 /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
+		40C964BD296BDC54002E0A88 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 			children = (
 				407FE678296446E200E2E784 /* LocalCache.swift */,
 				407FE67A2964471500E2E784 /* GameViewModel.swift */,
+				40C964BD296BDC54002E0A88 /* FavoriteViewModel.swift */,
 			);
 			path = LocalCache;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 				409DC484295C4BC700B9CD31 /* SceneDelegate.swift */,
 				407FE677296446D000E2E784 /* LocalCache */,
 				407FE6702964367900E2E784 /* GamesTableView */,
+				40C964B8296BD9CF002E0A88 /* FavoritesTableView */,
 				406C3D64295DB1C4002275B1 /* controllers */,
 				409DC488295C4BC700B9CD31 /* Main.storyboard */,
 				409DC48B295C4BC800B9CD31 /* Assets.xcassets */,
@@ -118,6 +126,15 @@
 				409DC490295C4BC800B9CD31 /* Info.plist */,
 			);
 			path = steam_app;
+			sourceTree = "<group>";
+		};
+		40C964B8296BD9CF002E0A88 /* FavoritesTableView */ = {
+			isa = PBXGroup;
+			children = (
+				40C964B9296BD9F6002E0A88 /* FavoritesTableViewCell.swift */,
+				40C964BA296BD9F7002E0A88 /* FavoritesTableViewCell.xib */,
+			);
+			path = FavoritesTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +198,7 @@
 				409DC48F295C4BC800B9CD31 /* LaunchScreen.storyboard in Resources */,
 				409DC48C295C4BC800B9CD31 /* Assets.xcassets in Resources */,
 				409DC48A295C4BC700B9CD31 /* Main.storyboard in Resources */,
+				40C964BC296BD9F7002E0A88 /* FavoritesTableViewCell.xib in Resources */,
 				407FE676296436E900E2E784 /* GamesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				409DC487295C4BC700B9CD31 /* GamesViewController.swift in Sources */,
+				40C964BB296BD9F7002E0A88 /* FavoritesTableViewCell.swift in Sources */,
 				407FE675296436E900E2E784 /* GamesTableViewCell.swift in Sources */,
 				409DC483295C4BC700B9CD31 /* AppDelegate.swift in Sources */,
 				407FE66429642DC600E2E784 /* FavoritesViewController.swift in Sources */,
@@ -200,6 +219,7 @@
 				407FE679296446E200E2E784 /* LocalCache.swift in Sources */,
 				407168CE296ABE6600813D8B /* GamesDetailsViewController.swift in Sources */,
 				407FE66629642DD800E2E784 /* NewsViewController.swift in Sources */,
+				40C964BE296BDC54002E0A88 /* FavoriteViewModel.swift in Sources */,
 				409DC485295C4BC700B9CD31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

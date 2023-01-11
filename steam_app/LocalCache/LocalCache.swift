@@ -24,4 +24,10 @@ class LocalCache {
         Game(title: "Game 9", isFavorite: false),
         Game(title: "Game 10", isFavorite: false)
     ]
+    static var favsList = [
+        Favorite(title: "CS: GO", price: "$9.99", isOnDiscount: false),
+        Favorite(title: "Dota2", price: "Free", isOnDiscount: false),
+        Favorite(title: "Civilization VI", price: "$17.35 (-20%)", isOnDiscount: true),
+        Favorite(title: "CTA V", price: "$33.99", isOnDiscount: false)
+    ]
 }
