@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class GamesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     let gamesList = LocalCache.gamesList
@@ -32,7 +31,6 @@ extension GamesViewController: UITableViewDelegate {
         performSegue(withIdentifier: "showGameDetail", sender: self)
     }
 }
-
 
 extension GamesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

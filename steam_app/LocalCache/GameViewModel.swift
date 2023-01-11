@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Game {
     let title: String
     var isFavorite: Bool

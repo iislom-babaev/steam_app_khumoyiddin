@@ -16,10 +16,6 @@ class NewsViewController: UIViewController {
         configureTableView()
     }
     
-    @IBAction func filter(_ sender: Any) {
-        print("filtering news")
-    }
-    
     func configureTableView() {
         let nib = UINib(nibName: NewsTableViewCell.nibName, bundle: nil)
         
