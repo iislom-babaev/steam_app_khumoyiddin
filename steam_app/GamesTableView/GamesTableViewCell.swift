@@ -47,15 +47,12 @@ class GamesTableViewCell: UITableViewCell {
     func setLabelText(text: String) {
         titleLabel.text = text
     }
-    
     func setLabelTextFont(font: UIFont) {
         titleLabel.font = font
     }
     func setStarImage(string: String) {
         favoriteStar.setImage(UIImage(systemName: string), for: .normal)
     }
-    
-    
 }
 
 extension GamesTableViewCell {

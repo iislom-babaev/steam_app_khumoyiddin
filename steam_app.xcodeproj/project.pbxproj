@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		407168CE296ABE6600813D8B /* GamesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407168CD296ABE6600813D8B /* GamesDetailsViewController.swift */; };
 		407FE66429642DC600E2E784 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE66329642DC600E2E784 /* FavoritesViewController.swift */; };
 		407FE66629642DD800E2E784 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE66529642DD800E2E784 /* NewsViewController.swift */; };
 		407FE675296436E900E2E784 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE673296436E900E2E784 /* GamesTableViewCell.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		407168CD296ABE6600813D8B /* GamesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesDetailsViewController.swift; sourceTree = "<group>"; };
 		407FE66329642DC600E2E784 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		407FE66529642DD800E2E784 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		407FE673296436E900E2E784 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
@@ -58,11 +60,20 @@
 		406C3D64295DB1C4002275B1 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				409DC486295C4BC700B9CD31 /* GamesViewController.swift */,
+				407168CC296ABE5300813D8B /* Games */,
 				407FE66329642DC600E2E784 /* FavoritesViewController.swift */,
 				407FE66529642DD800E2E784 /* NewsViewController.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		407168CC296ABE5300813D8B /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				409DC486295C4BC700B9CD31 /* GamesViewController.swift */,
+				407168CD296ABE6600813D8B /* GamesDetailsViewController.swift */,
+			);
+			path = Games;
 			sourceTree = "<group>";
 		};
 		407FE6702964367900E2E784 /* GamesTableView */ = {
@@ -206,6 +217,7 @@
 				407FE66429642DC600E2E784 /* FavoritesViewController.swift in Sources */,
 				407FE67B2964471500E2E784 /* GameViewModel.swift in Sources */,
 				407FE679296446E200E2E784 /* LocalCache.swift in Sources */,
+				407168CE296ABE6600813D8B /* GamesDetailsViewController.swift in Sources */,
 				407FE66629642DD800E2E784 /* NewsViewController.swift in Sources */,
 				40C964BE296BDC54002E0A88 /* FavoriteViewModel.swift in Sources */,
 				409DC485295C4BC700B9CD31 /* SceneDelegate.swift in Sources */,

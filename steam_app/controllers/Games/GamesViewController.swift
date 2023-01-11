@@ -27,9 +27,10 @@ class GamesViewController: UIViewController {
 
 extension GamesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showDetail", sender: self)
     }
 }
-
 
 extension GamesViewController: UITableViewDataSource {
     
@@ -43,6 +44,4 @@ extension GamesViewController: UITableViewDataSource {
         
         return cell
     }
-    
-
 }

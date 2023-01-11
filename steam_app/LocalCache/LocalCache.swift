@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class LocalCache {
     static var gamesList = [
         Game(title: "Game 1", isFavorite: false),
