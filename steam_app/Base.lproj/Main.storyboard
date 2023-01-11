@@ -143,12 +143,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u4e-dJ-pXv">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="759.66666666666663"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYn-hl-Y6s">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dota2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Niz-cO-mLG">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dota2" translatesAutoresizingMaskIntoConstraints="NO" id="Niz-cO-mLG">
                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
                                                     </imageView>
                                                 </subviews>
@@ -163,7 +163,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kH-66-89y">
-                                                <rect key="frame" x="0.0" y="200" width="390" height="644"/>
+                                                <rect key="frame" x="0.0" y="200" width="390" height="559.66666666666663"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dota 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wh-4Z-2LR">
                                                         <rect key="frame" x="158.33333333333334" y="15" width="73.333333333333343" height="38"/>
@@ -227,12 +227,6 @@
                                                         <rect key="frame" x="8" y="159" width="374" height="1"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dota2_play.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OAe-Cq-Rgq">
-                                                        <rect key="frame" x="8" y="312" width="374" height="250"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="250" id="Pdz-8Z-A6X"/>
-                                                        </constraints>
-                                                    </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po6-P7-UMi">
                                                         <rect key="frame" x="62" y="69" width="44" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -251,6 +245,12 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dota2_play" translatesAutoresizingMaskIntoConstraints="NO" id="OAe-Cq-Rgq">
+                                                        <rect key="frame" x="8" y="305" width="374" height="250"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="250" id="Pdz-8Z-A6X"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" name="MainScreenBackgroundColor"/>
                                                 <constraints>
@@ -262,16 +262,15 @@
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2uZ-z1-5fI" secondAttribute="trailing" constant="20" symbolic="YES" id="Dxw-PU-Bta"/>
                                                     <constraint firstItem="2uZ-z1-5fI" firstAttribute="top" secondItem="po6-P7-UMi" secondAttribute="bottom" constant="36" id="ElW-gu-mch"/>
                                                     <constraint firstItem="xuT-AB-GvS" firstAttribute="centerY" secondItem="2uZ-z1-5fI" secondAttribute="centerY" id="FZh-is-9pn"/>
-                                                    <constraint firstItem="OAe-Cq-Rgq" firstAttribute="bottom" secondItem="5kH-66-89y" secondAttribute="bottomMargin" constant="-74" id="FtA-6m-707"/>
-                                                    <constraint firstItem="33d-cT-YSY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Wh-4Z-2LR" secondAttribute="trailing" constant="8" symbolic="YES" id="FzP-Pc-aNr"/>
+                                                    <constraint firstItem="33d-cT-YSY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Wh-4Z-2LR" secondAttribute="trailing" symbolic="YES" id="FzP-Pc-aNr"/>
                                                     <constraint firstItem="4FF-uf-OCl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2DF-I5-mpg" secondAttribute="trailing" constant="8" symbolic="YES" id="GvT-ME-Gei"/>
                                                     <constraint firstItem="mUQ-xH-PLS" firstAttribute="leading" secondItem="5kH-66-89y" secondAttribute="leading" constant="8" id="HON-Cc-oRt"/>
-                                                    <constraint firstItem="33d-cT-YSY" firstAttribute="trailing" secondItem="5kH-66-89y" secondAttribute="trailingMargin" id="J7C-w3-pMT"/>
                                                     <constraint firstItem="2DF-I5-mpg" firstAttribute="leading" secondItem="po6-P7-UMi" secondAttribute="trailing" constant="41" id="KAB-uF-tWQ"/>
                                                     <constraint firstItem="xuT-AB-GvS" firstAttribute="top" secondItem="2DF-I5-mpg" secondAttribute="bottom" constant="34" id="LUd-a9-VMP"/>
                                                     <constraint firstItem="fMO-MD-54w" firstAttribute="baseline" secondItem="38n-GV-OW5" secondAttribute="baseline" id="MsL-2I-fBc"/>
                                                     <constraint firstItem="4FF-uf-OCl" firstAttribute="baseline" secondItem="2DF-I5-mpg" secondAttribute="firstBaseline" id="OM0-Pf-tNZ"/>
                                                     <constraint firstItem="zhB-1b-hPk" firstAttribute="leading" secondItem="5kH-66-89y" secondAttribute="leading" constant="8" id="ReJ-zE-orr"/>
+                                                    <constraint firstItem="OAe-Cq-Rgq" firstAttribute="top" secondItem="mUQ-xH-PLS" secondAttribute="bottom" constant="7.3333333333333144" id="SWg-7R-zqe"/>
                                                     <constraint firstItem="34J-cv-ahy" firstAttribute="leading" secondItem="38n-GV-OW5" secondAttribute="trailing" constant="8" symbolic="YES" id="To7-hZ-iRd"/>
                                                     <constraint firstItem="xuT-AB-GvS" firstAttribute="centerX" secondItem="2DF-I5-mpg" secondAttribute="centerX" id="TzA-oL-tbG"/>
                                                     <constraint firstItem="fMO-MD-54w" firstAttribute="top" secondItem="4FF-uf-OCl" secondAttribute="bottom" constant="33.666666666666671" id="XLp-qL-AXF"/>
@@ -280,6 +279,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="zhB-1b-hPk" secondAttribute="trailing" constant="8" id="a6H-p9-sPS"/>
                                                     <constraint firstItem="34J-cv-ahy" firstAttribute="centerY" secondItem="38n-GV-OW5" secondAttribute="centerY" id="bH0-VW-b9s"/>
                                                     <constraint firstItem="OAe-Cq-Rgq" firstAttribute="leading" secondItem="5kH-66-89y" secondAttribute="leading" constant="8" id="cJx-H9-qQx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="33d-cT-YSY" secondAttribute="trailing" constant="8" id="fYC-T7-3jw"/>
                                                     <constraint firstItem="38n-GV-OW5" firstAttribute="leading" secondItem="fMO-MD-54w" secondAttribute="trailing" constant="12" id="g4w-HW-swd"/>
                                                     <constraint firstAttribute="trailing" secondItem="mUQ-xH-PLS" secondAttribute="trailing" constant="8" id="i4z-qf-Gsg"/>
                                                     <constraint firstItem="po6-P7-UMi" firstAttribute="leading" secondItem="5kH-66-89y" secondAttribute="leading" constant="62" id="iu6-P9-oET"/>
@@ -303,7 +303,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="u4e-dJ-pXv" secondAttribute="trailing" id="0Jg-TQ-A1t"/>
                                     <constraint firstItem="u4e-dJ-pXv" firstAttribute="width" secondItem="aWI-mb-a9k" secondAttribute="width" id="Z63-qB-TI0"/>
-                                    <constraint firstItem="u4e-dJ-pXv" firstAttribute="height" secondItem="aWI-mb-a9k" secondAttribute="height" id="aLl-5Q-mbt"/>
+                                    <constraint firstItem="u4e-dJ-pXv" firstAttribute="height" secondItem="aWI-mb-a9k" secondAttribute="height" multiplier="0.9" id="aLl-5Q-mbt"/>
                                     <constraint firstItem="u4e-dJ-pXv" firstAttribute="top" secondItem="aWI-mb-a9k" secondAttribute="top" id="beW-gg-SnF"/>
                                     <constraint firstItem="u4e-dJ-pXv" firstAttribute="leading" secondItem="aWI-mb-a9k" secondAttribute="leading" id="cag-ZD-H4Z"/>
                                     <constraint firstAttribute="bottom" secondItem="u4e-dJ-pXv" secondAttribute="bottom" id="e9I-gx-rkR"/>
@@ -366,8 +366,8 @@
     <resources>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
-        <image name="dota2.jpeg" width="616" height="353"/>
-        <image name="dota2_play.jpg" width="1920" height="1080"/>
+        <image name="dota2" width="616" height="353"/>
+        <image name="dota2_play" width="1920" height="1080"/>
         <image name="list.star" catalog="system" width="128" height="95"/>
         <image name="playstation.logo" catalog="system" width="128" height="92"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
