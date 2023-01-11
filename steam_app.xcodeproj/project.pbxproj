@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		406832BC296EA49400903655 /* NewsGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406832BB296EA49400903655 /* NewsGameViewModel.swift */; };
+		406832BF296EA7FF00903655 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406832BE296EA7FF00903655 /* NewsViewController.swift */; };
+		406832C2296EA87E00903655 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406832C0296EA87E00903655 /* NewsTableViewCell.swift */; };
+		406832C3296EA87E00903655 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 406832C1296EA87E00903655 /* NewsTableViewCell.xib */; };
 		407168CE296ABE6600813D8B /* GamesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407168CD296ABE6600813D8B /* GamesDetailsViewController.swift */; };
 		407FE66429642DC600E2E784 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE66329642DC600E2E784 /* FavoritesViewController.swift */; };
-		407FE66629642DD800E2E784 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE66529642DD800E2E784 /* NewsViewController.swift */; };
 		407FE675296436E900E2E784 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE673296436E900E2E784 /* GamesTableViewCell.swift */; };
 		407FE676296436E900E2E784 /* GamesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407FE674296436E900E2E784 /* GamesTableViewCell.xib */; };
 		407FE679296446E200E2E784 /* LocalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407FE678296446E200E2E784 /* LocalCache.swift */; };
@@ -26,9 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		406832BB296EA49400903655 /* NewsGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsGameViewModel.swift; sourceTree = "<group>"; };
+		406832BE296EA7FF00903655 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		406832C0296EA87E00903655 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		406832C1296EA87E00903655 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		407168CD296ABE6600813D8B /* GamesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesDetailsViewController.swift; sourceTree = "<group>"; };
 		407FE66329642DC600E2E784 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		407FE66529642DD800E2E784 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		407FE673296436E900E2E784 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 		407FE674296436E900E2E784 /* GamesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesTableViewCell.xib; sourceTree = "<group>"; };
 		407FE678296446E200E2E784 /* LocalCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCache.swift; sourceTree = "<group>"; };
@@ -57,12 +63,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		406832BD296EA7F000903655 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				406832BE296EA7FF00903655 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		406832C4296EA88600903655 /* NewsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				406832C0296EA87E00903655 /* NewsTableViewCell.swift */,
+				406832C1296EA87E00903655 /* NewsTableViewCell.xib */,
+			);
+			path = NewsTableView;
+			sourceTree = "<group>";
+		};
 		406C3D64295DB1C4002275B1 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
 				407168CC296ABE5300813D8B /* Games */,
 				407FE66329642DC600E2E784 /* FavoritesViewController.swift */,
-				407FE66529642DD800E2E784 /* NewsViewController.swift */,
+				406832BD296EA7F000903655 /* News */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -91,6 +114,7 @@
 				407FE678296446E200E2E784 /* LocalCache.swift */,
 				407FE67A2964471500E2E784 /* GameViewModel.swift */,
 				40C964BD296BDC54002E0A88 /* FavoriteViewModel.swift */,
+				406832BB296EA49400903655 /* NewsGameViewModel.swift */,
 			);
 			path = LocalCache;
 			sourceTree = "<group>";
@@ -119,6 +143,7 @@
 				407FE677296446D000E2E784 /* LocalCache */,
 				407FE6702964367900E2E784 /* GamesTableView */,
 				40C964B8296BD9CF002E0A88 /* FavoritesTableView */,
+				406832C4296EA88600903655 /* NewsTableView */,
 				406C3D64295DB1C4002275B1 /* controllers */,
 				409DC488295C4BC700B9CD31 /* Main.storyboard */,
 				409DC48B295C4BC800B9CD31 /* Assets.xcassets */,
@@ -199,6 +224,7 @@
 				409DC48C295C4BC800B9CD31 /* Assets.xcassets in Resources */,
 				409DC48A295C4BC700B9CD31 /* Main.storyboard in Resources */,
 				40C964BC296BD9F7002E0A88 /* FavoritesTableViewCell.xib in Resources */,
+				406832C3296EA87E00903655 /* NewsTableViewCell.xib in Resources */,
 				407FE676296436E900E2E784 /* GamesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,12 +239,14 @@
 				409DC487295C4BC700B9CD31 /* GamesViewController.swift in Sources */,
 				40C964BB296BD9F7002E0A88 /* FavoritesTableViewCell.swift in Sources */,
 				407FE675296436E900E2E784 /* GamesTableViewCell.swift in Sources */,
+				406832BF296EA7FF00903655 /* NewsViewController.swift in Sources */,
+				406832C2296EA87E00903655 /* NewsTableViewCell.swift in Sources */,
+				406832BC296EA49400903655 /* NewsGameViewModel.swift in Sources */,
 				409DC483295C4BC700B9CD31 /* AppDelegate.swift in Sources */,
 				407FE66429642DC600E2E784 /* FavoritesViewController.swift in Sources */,
 				407FE67B2964471500E2E784 /* GameViewModel.swift in Sources */,
 				407FE679296446E200E2E784 /* LocalCache.swift in Sources */,
 				407168CE296ABE6600813D8B /* GamesDetailsViewController.swift in Sources */,
-				407FE66629642DD800E2E784 /* NewsViewController.swift in Sources */,
 				40C964BE296BDC54002E0A88 /* FavoriteViewModel.swift in Sources */,
 				409DC485295C4BC700B9CD31 /* SceneDelegate.swift in Sources */,
 			);

@@ -7,9 +7,9 @@
 
 import UIKit
 
-class GamesViewController: UIViewController {
+class NewsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    let gamesList = LocalCache.gamesList
+    let  newsList = LocalCache.newsList
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,30 +17,32 @@ class GamesViewController: UIViewController {
     }
     
     func configureTableView() {
-        let nib = UINib(nibName: GamesTableViewCell.nibName, bundle: nil)
+        let nib = UINib(nibName: NewsTableViewCell.nibName, bundle: nil)
         
-        tableView.register(nib, forCellReuseIdentifier: GamesTableViewCell.nibName)
+        tableView.register(nib, forCellReuseIdentifier: NewsTableViewCell.nibName)
         tableView.delegate = self
         tableView.dataSource = self
     }
 }
 
-extension GamesViewController: UITableViewDelegate {
+
+extension NewsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "showGameDetail", sender: self)
+        performSegue(withIdentifier: "showNewsDetail", sender: self)
     }
 }
 
-extension GamesViewController: UITableViewDataSource {
+extension NewsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return gamesList.count
+        return newsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: GamesTableViewCell.nibName, for: indexPath) as! GamesTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.nibName, for: indexPath) as! NewsTableViewCell
         cell.cellConfiguration(cell: cell, indexPath: indexPath)
         
         return cell
     }
 }
+

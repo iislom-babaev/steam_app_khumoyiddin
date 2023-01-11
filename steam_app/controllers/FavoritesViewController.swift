@@ -48,5 +48,3 @@ extension FavoritesViewController: UITableViewDataSource {
         return cell
     }
 }
-
-
