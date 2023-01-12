@@ -30,8 +30,8 @@ class GamesTableViewCell: UITableViewCell {
         }
     }
     
-    func cellConfiguration(cell: GamesTableViewCell, indexPath: IndexPath) {
-        let game = gamesList[indexPath.row]
+    func cellConfiguration(cell: GamesTableViewCell, indexPath: IndexPath, data: [Game]) {
+        let game = data[indexPath.row]
         
         cell.selectionStyle = .none
         cell.setLabelText(text: game.title)

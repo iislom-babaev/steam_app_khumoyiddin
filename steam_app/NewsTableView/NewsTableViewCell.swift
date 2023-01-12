@@ -23,8 +23,8 @@ class NewsTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func cellConfiguration(cell: NewsTableViewCell, indexPath: IndexPath) {
-        let news = newsList[indexPath.row]
+    func cellConfiguration(cell: NewsTableViewCell, indexPath: IndexPath, data: [News]) {
+        let news = data[indexPath.row]
         
         game.text = news.game
         team.text = news.team

@@ -21,8 +21,8 @@ class FavoritesTableViewCell: UITableViewCell {
         
     }
     
-    func cellConfiguration(cell: FavoritesTableViewCell, indexPath: IndexPath) {
-        let favs = favsList[indexPath.row]
+    func cellConfiguration(cell: FavoritesTableViewCell, indexPath: IndexPath, data: [Favorite]) {
+        let favs = data[indexPath.row]
         
         cell.setTitleText(text: favs.title)
         cell.setPriceText(text: favs.price)
