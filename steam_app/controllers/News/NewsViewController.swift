@@ -18,6 +18,7 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
         configureTableView()
         configureSearchBar()
+        self.hideKeyboardWhenTappedAround()
     }
     
     func configureTableView() {

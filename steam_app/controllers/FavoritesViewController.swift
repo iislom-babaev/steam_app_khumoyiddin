@@ -18,6 +18,7 @@ class FavoritesViewController: UIViewController {
         super.viewDidLoad()
         configureTableView()
         configureSearchBar()
+        self.hideKeyboardWhenTappedAround()
     }
     
     func configureTableView() {
