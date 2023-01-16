@@ -24,6 +24,7 @@ class FavoritesTableViewCell: UITableViewCell {
     func cellConfiguration(cell: FavoritesTableViewCell, indexPath: IndexPath) {
         let favs = favsList[indexPath.row]
         
+        cell.selectionStyle = .none
         cell.setTitleText(text: favs.title)
         cell.setPriceText(text: favs.price)
         cell.setOnDicsountColor(isOnDiscount: favs.isOnDiscount, color: UIColor(named: "GreenColor")!)
