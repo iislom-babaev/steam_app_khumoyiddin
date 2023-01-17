@@ -11,13 +11,14 @@ class NewsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var search: UISearchBar!
     let  newsList = LocalCache.newsList
-    var filteredData = [News]()
+    var filteredData: [News] = []
     var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        configureSearchBar()
+        search.configureCustomSearchBar(searchBar: search)
+        search.delegate = self
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -27,12 +28,6 @@ class NewsViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: NewsTableViewCell.nibName)
         tableView.delegate = self
         tableView.dataSource = self
-    }
-    func configureSearchBar() {
-        UILabel.appearance(whenContainedInInstancesOf: [UISearchBar.self]).textColor = UIColor(named: "SearchHintColor")
-        search.searchTextField.leftView?.tintColor = UIColor(named: "SearchHintColor")
-        search.searchTextField.textColor = .white
-        search.delegate = self
     }
 }
 

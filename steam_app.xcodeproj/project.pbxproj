@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4030B206297665E200A57076 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030B205297665E200A57076 /* SearchBar.swift */; };
 		40624B802975741900EEC124 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40624B7F2975741900EEC124 /* HideKeyboard.swift */; };
 		406832BC296EA49400903655 /* NewsGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406832BB296EA49400903655 /* NewsGameViewModel.swift */; };
 		406832BF296EA7FF00903655 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406832BE296EA7FF00903655 /* NewsViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4030B205297665E200A57076 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		40624B7F2975741900EEC124 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 		406832BB296EA49400903655 /* NewsGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsGameViewModel.swift; sourceTree = "<group>"; };
 		406832BE296EA7FF00903655 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				409DC482295C4BC700B9CD31 /* AppDelegate.swift */,
 				409DC484295C4BC700B9CD31 /* SceneDelegate.swift */,
 				40624B7F2975741900EEC124 /* HideKeyboard.swift */,
+				4030B205297665E200A57076 /* SearchBar.swift */,
 				407FE677296446D000E2E784 /* LocalCache */,
 				407FE6702964367900E2E784 /* GamesTableView */,
 				40C964B8296BD9CF002E0A88 /* FavoritesTableView */,
@@ -241,6 +244,7 @@
 			files = (
 				409DC487295C4BC700B9CD31 /* GamesViewController.swift in Sources */,
 				40C964BB296BD9F7002E0A88 /* FavoritesTableViewCell.swift in Sources */,
+				4030B206297665E200A57076 /* SearchBar.swift in Sources */,
 				40624B802975741900EEC124 /* HideKeyboard.swift in Sources */,
 				407FE675296436E900E2E784 /* GamesTableViewCell.swift in Sources */,
 				406832BF296EA7FF00903655 /* NewsViewController.swift in Sources */,

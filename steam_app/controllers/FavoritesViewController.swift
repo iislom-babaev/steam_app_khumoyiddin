@@ -11,13 +11,14 @@ class FavoritesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var search: UISearchBar!
     let favsList = LocalCache.favsList
-    var filteredData = [Favorite]()
+    var filteredData: [Favorite] = []
     var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        configureSearchBar()
+        search.configureCustomSearchBar(searchBar: search)
+        search.delegate = self
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -27,12 +28,6 @@ class FavoritesViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: FavoritesTableViewCell.nibName)
         tableView.delegate = self
         tableView.dataSource = self
-    }
-    func configureSearchBar() {
-        UILabel.appearance(whenContainedInInstancesOf: [UISearchBar.self]).textColor = UIColor(named: "SearchHintColor")
-        search.searchTextField.leftView?.tintColor = UIColor(named: "SearchHintColor")
-        search.searchTextField.textColor = .white
-        search.delegate = self
     }
 }
 

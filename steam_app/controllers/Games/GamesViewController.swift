@@ -11,13 +11,14 @@ class GamesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var search: UISearchBar!
     let gamesList = LocalCache.gamesList
-    var filteredData = [Game]()
+    var filteredData: [Game] = []
     var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        configureSearchBar()
+        search.configureCustomSearchBar(searchBar: search)
+        search.delegate = self
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -27,12 +28,6 @@ class GamesViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: GamesTableViewCell.nibName)
         tableView.delegate = self
         tableView.dataSource = self
-    }
-    func configureSearchBar() {
-        UILabel.appearance(whenContainedInInstancesOf: [UISearchBar.self]).textColor = UIColor(named: "SearchHintColor")
-        search.searchTextField.leftView?.tintColor = UIColor(named: "SearchHintColor")
-        search.searchTextField.textColor = .white
-        search.delegate = self
     }
 }
 
