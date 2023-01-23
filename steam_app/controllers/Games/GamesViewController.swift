@@ -17,19 +17,23 @@ class GamesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        search.configureCustomSearchBar(searchBar: search)
+        search.configureCustomSearchBar()
         search.delegate = self
         self.hideKeyboardWhenTappedAround()
+        configureBottomSpacingOnKeyboardAppears()
     }
     
     func configureTableView() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         let nib = UINib(nibName: GamesTableViewCell.nibName, bundle: nil)
         
         tableView.register(nib, forCellReuseIdentifier: GamesTableViewCell.nibName)
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    func configureBottomSpacingOnKeyboardAppears() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     @objc private func keyboardWillShow(notification: NSNotification) {
@@ -86,7 +90,8 @@ extension GamesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GamesTableViewCell.nibName, for: indexPath) as! GamesTableViewCell
-        cell.cellConfiguration(cell: cell, indexPath: indexPath, data: isSearching ? filteredData : gamesList)
+        
+        cell.configureCell(cell: cell, game: isSearching ? filteredData[indexPath.row] : gamesList[indexPath.row])
         
         return cell
     }

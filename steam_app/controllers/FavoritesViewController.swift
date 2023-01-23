@@ -17,7 +17,7 @@ class FavoritesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        search.configureCustomSearchBar(searchBar: search)
+        search.configureCustomSearchBar()
         search.delegate = self
         self.hideKeyboardWhenTappedAround()
     }
@@ -68,7 +68,7 @@ extension FavoritesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoritesTableViewCell.nibName, for: indexPath) as! FavoritesTableViewCell
-        cell.cellConfiguration(cell: cell, indexPath: indexPath, data: isSearching ? filteredData : favsList)
+        cell.configureCell(cell: cell, with: isSearching ? filteredData[indexPath.row] : favsList[indexPath.row])
         return cell
     }
 }

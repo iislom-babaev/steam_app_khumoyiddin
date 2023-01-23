@@ -17,19 +17,23 @@ class NewsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        search.configureCustomSearchBar(searchBar: search)
+        search.configureCustomSearchBar()
         search.delegate = self
         self.hideKeyboardWhenTappedAround()
+        configureBottomSpacingOnKeyboardAppears()
     }
     
     func configureTableView() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         let nib = UINib(nibName: NewsTableViewCell.nibName, bundle: nil)
         
         tableView.register(nib, forCellReuseIdentifier: NewsTableViewCell.nibName)
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    func configureBottomSpacingOnKeyboardAppears() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     @objc private func keyboardWillShow(notification: NSNotification) {
@@ -86,7 +90,7 @@ extension NewsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.nibName, for: indexPath) as! NewsTableViewCell
-        cell.cellConfiguration(cell: cell, indexPath: indexPath, data: isSearching ? filteredData : newsList)
+        cell.configureCell(cell: cell, with: newsList[indexPath.row])
         
         return cell
     }

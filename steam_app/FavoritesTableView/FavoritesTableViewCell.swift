@@ -21,12 +21,10 @@ class FavoritesTableViewCell: UITableViewCell {
         
     }
     
-    func cellConfiguration(cell: FavoritesTableViewCell, indexPath: IndexPath, data: [Favorite]) {
-        let favs = data[indexPath.row]
-        
-        cell.setTitleText(text: favs.title)
-        cell.setPriceText(text: favs.price)
-        cell.setOnDicsountColor(isOnDiscount: favs.isOnDiscount, color: UIColor(named: "GreenColor")!)
+    func configureCell(cell: FavoritesTableViewCell, with favorite: Favorite) {
+        cell.setTitleText(text: favorite.title)
+        cell.setPriceText(text: favorite.price)
+        cell.setOnDicsountColor(isOnDiscount: favorite.isOnDiscount, color: UIColor(named: "GreenColor")!)
     }
     
     func setTitleText(text: String) {

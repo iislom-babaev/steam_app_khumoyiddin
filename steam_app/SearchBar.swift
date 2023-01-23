@@ -8,11 +8,11 @@
 import UIKit
 
 extension UISearchBar {
-    func configureCustomSearchBar(searchBar: UISearchBar) {
+    func configureCustomSearchBar() {
         UILabel.appearance(whenContainedInInstancesOf: [UISearchBar.self]).textColor = UIColor(named: "SearchHintColor")
-        searchBar.searchTextField.leftView?.tintColor = UIColor(named: "SearchHintColor")
-        searchBar.searchTextField.textColor = .white
-        if let clearButton = searchBar.searchTextField.value(forKey: "_clearButton") as? UIButton {
+        self.searchTextField.leftView?.tintColor = UIColor(named: "SearchHintColor")
+        self.searchTextField.textColor = .white
+        if let clearButton = self.searchTextField.value(forKey: "_clearButton") as? UIButton {
              let templateImage = clearButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
              clearButton.setImage(templateImage, for: .normal)
              clearButton.tintColor = UIColor(named: "SearchHintColor")
