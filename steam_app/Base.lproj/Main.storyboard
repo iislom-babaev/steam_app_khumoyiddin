@@ -131,14 +131,14 @@
         <scene sceneID="M8P-eH-7sf">
             <objects>
                 <viewController id="8Kx-wX-xTR" customClass="GamesViewController" customModule="steam_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XPU-H2-sKc">
+                    <view key="view" contentMode="scaleToFill" id="XPU-H2-sKc" customClass="GradientView" customModule="steam_app" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ke8-8N-Zf0">
                                 <rect key="frame" x="0.0" y="151" width="390" height="631"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="MainScreenBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="VHQ-OA-tVG">
@@ -156,6 +156,14 @@
                         <viewLayoutGuide key="safeArea" id="9dk-GN-tmW"/>
                         <color key="backgroundColor" name="MainScreenBackgroundColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" name="GradientFirstColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" name="GradientSecondColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Games" id="s7P-Lv-9Xk"/>
                     <connections>
@@ -172,7 +180,7 @@
         <scene sceneID="xA9-K8-yBN">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="edA-dl-THu" customClass="GamesDetailsViewController" customModule="steam_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5Qd-TV-NSP">
+                    <view key="view" contentMode="scaleToFill" id="5Qd-TV-NSP" customClass="GradientView" customModule="steam_app" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -189,7 +197,6 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="0es-RK-pHG"/>
                                                     <constraint firstItem="Niz-cO-mLG" firstAttribute="centerX" secondItem="OYn-hl-Y6s" secondAttribute="centerX" id="9x3-N9-6qq"/>
@@ -289,7 +296,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" name="MainScreenBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="OAe-Cq-Rgq" secondAttribute="trailing" constant="8" id="2EG-OB-gwG"/>
                                                     <constraint firstItem="po6-P7-UMi" firstAttribute="top" secondItem="5Wh-4Z-2LR" secondAttribute="bottom" constant="16" id="2Os-nA-1CY"/>
@@ -334,7 +340,6 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="MainScreenBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="u4e-dJ-pXv" secondAttribute="trailing" id="0Jg-TQ-A1t"/>
                                     <constraint firstItem="u4e-dJ-pXv" firstAttribute="width" secondItem="aWI-mb-a9k" secondAttribute="width" id="Z63-qB-TI0"/>
@@ -346,13 +351,20 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MfS-wI-cGv"/>
-                        <color key="backgroundColor" name="TopNavigationBarColor"/>
                         <constraints>
                             <constraint firstItem="aWI-mb-a9k" firstAttribute="leading" secondItem="MfS-wI-cGv" secondAttribute="leading" id="6AS-Ar-tg7"/>
                             <constraint firstItem="MfS-wI-cGv" firstAttribute="trailing" secondItem="aWI-mb-a9k" secondAttribute="trailing" id="IQy-m9-TTt"/>
                             <constraint firstItem="aWI-mb-a9k" firstAttribute="top" secondItem="5Qd-TV-NSP" secondAttribute="top" id="PiQ-9h-iqK"/>
                             <constraint firstAttribute="bottom" secondItem="aWI-mb-a9k" secondAttribute="bottom" id="SAq-IF-ljl"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" name="GradientFirstColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" name="GradientSecondColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Dota 2" style="editor" id="pL6-Jm-fmh"/>
                     <connections>
@@ -368,14 +380,14 @@
         <scene sceneID="rMx-Pj-qzz">
             <objects>
                 <viewController id="sab-jo-5mf" customClass="FavoritesViewController" customModule="steam_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SWV-9x-TMG">
+                    <view key="view" contentMode="scaleToFill" id="SWV-9x-TMG" customClass="GradientView" customModule="steam_app" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ami-Lc-dlq">
                                 <rect key="frame" x="0.0" y="151" width="390" height="631"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="MainScreenBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="AUV-hS-YmO">
@@ -391,7 +403,14 @@
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P26-tl-GIT"/>
-                        <color key="backgroundColor" name="MainScreenBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" name="GradientFirstColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" name="GradientSecondColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Favorites" id="NOK-VJ-47j">
@@ -416,14 +435,14 @@
         <scene sceneID="cNB-OK-j4k">
             <objects>
                 <viewController id="R4m-i1-oIa" customClass="NewsViewController" customModule="steam_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GmD-Qc-NAn">
+                    <view key="view" contentMode="scaleToFill" id="GmD-Qc-NAn" customClass="GradientView" customModule="steam_app" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wye-5q-CXe">
                                 <rect key="frame" x="0.0" y="151" width="390" height="631"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="MainScreenBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ojO-rt-op4">
@@ -439,7 +458,14 @@
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iYY-LN-r2s"/>
-                        <color key="backgroundColor" name="MainScreenBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" name="GradientFirstColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" name="GradientSecondColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="News" id="ci7-8G-SEh">
                         <barButtonItem key="rightBarButtonItem" title="Filter" id="fLW-Ns-9DC">
@@ -460,7 +486,7 @@
         <scene sceneID="Pxg-Sk-9ev">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="SQK-Jr-Reg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JAR-pb-Jr3">
+                    <view key="view" contentMode="scaleToFill" id="JAR-pb-Jr3" customClass="GradientView" customModule="steam_app" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -549,7 +575,6 @@ Follow the link to check the leaderboards!</string>
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="MainScreenBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="SUf-B5-CbL" firstAttribute="width" secondItem="wPb-KH-y5v" secondAttribute="width" id="570-Hh-dw4"/>
                                     <constraint firstItem="SUf-B5-CbL" firstAttribute="height" secondItem="wPb-KH-y5v" secondAttribute="height" priority="250" id="8eK-mq-Gv8"/>
@@ -562,13 +587,20 @@ Follow the link to check the leaderboards!</string>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gLR-j2-v83"/>
-                        <color key="backgroundColor" name="TopNavigationBarColor"/>
                         <constraints>
                             <constraint firstItem="gLR-j2-v83" firstAttribute="trailing" secondItem="wPb-KH-y5v" secondAttribute="trailing" id="405-DM-nFW"/>
                             <constraint firstItem="wPb-KH-y5v" firstAttribute="top" secondItem="JAR-pb-Jr3" secondAttribute="top" id="A6R-61-w88"/>
                             <constraint firstItem="wPb-KH-y5v" firstAttribute="leading" secondItem="gLR-j2-v83" secondAttribute="leading" id="Tvr-XI-x9A"/>
                             <constraint firstAttribute="bottom" secondItem="wPb-KH-y5v" secondAttribute="bottom" id="WXC-Tq-BzZ"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" name="GradientFirstColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" name="GradientSecondColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Tournament Winner!" style="editor" id="HKc-Fr-Iet"/>
                 </viewController>
@@ -593,6 +625,12 @@ Follow the link to check the leaderboards!</string>
         </namedColor>
         <namedColor name="FavoriteOrangeColor">
             <color red="0.94509803921568625" green="0.60392156862745094" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GradientFirstColor">
+            <color red="0.12941176470588237" green="0.24313725490196078" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GradientSecondColor">
+            <color red="0.11372549019607843" green="0.16078431372549021" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="GreenColor">
             <color red="0.48627450980392156" green="0.66274509803921566" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

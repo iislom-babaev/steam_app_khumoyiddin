@@ -28,6 +28,8 @@ class NewsTableViewCell: UITableViewCell {
         team.text = news.team
         date.text = news.date
         title.text = news.title
+        
+        cell.selectionStyle = .none
     }
 }
 
