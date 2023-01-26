@@ -30,9 +30,7 @@ class GamesTableViewCell: UITableViewCell {
         }
     }
     
-    func cellConfiguration(cell: GamesTableViewCell, indexPath: IndexPath) {
-        let game = gamesList[indexPath.row]
-        
+    func configureCell(cell: GamesTableViewCell, game: Game) {
         cell.selectionStyle = .none
         cell.setLabelText(text: game.title)
         if game.isFavorite {

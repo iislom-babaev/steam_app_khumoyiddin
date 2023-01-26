@@ -8,7 +8,7 @@
 import UIKit
 
 class NewsTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var game: UILabel!
     @IBOutlet weak var team: UILabel!
     @IBOutlet weak var date: UILabel!
@@ -18,19 +18,18 @@ class NewsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-    func cellConfiguration(cell: NewsTableViewCell, indexPath: IndexPath) {
-        let news = newsList[indexPath.row]
-        
-        cell.selectionStyle = .none
+    func configureCell(cell: NewsTableViewCell, with news: News) {
         game.text = news.game
         team.text = news.team
         date.text = news.date
         title.text = news.title
+        
+        cell.selectionStyle = .none
     }
 }
 
