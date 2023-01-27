@@ -21,6 +21,7 @@
 		409DC48A295C4BC700B9CD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DC488295C4BC700B9CD31 /* Main.storyboard */; };
 		409DC48C295C4BC800B9CD31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409DC48B295C4BC800B9CD31 /* Assets.xcassets */; };
 		409DC48F295C4BC800B9CD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DC48D295C4BC800B9CD31 /* LaunchScreen.storyboard */; };
+		40FD2D86298383B10084B12A /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD2D85298383B10084B12A /* FavoritesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		409DC48B295C4BC800B9CD31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409DC48E295C4BC800B9CD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		409DC490295C4BC800B9CD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40FD2D85298383B10084B12A /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				406A577F298107CD00F9729D /* GamesTableViewCell.swift */,
+				40FD2D85298383B10084B12A /* FavoritesTableViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				409DC487295C4BC700B9CD31 /* GamesViewController.swift in Sources */,
+				40FD2D86298383B10084B12A /* FavoritesTableViewCell.swift in Sources */,
 				406A57772980FE5800F9729D /* Game.swift in Sources */,
 				409DC483295C4BC700B9CD31 /* AppDelegate.swift in Sources */,
 				400C79A2297EAA1600EF9069 /* FavsViewController.swift in Sources */,
